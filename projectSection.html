@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Projects</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    /* Tabs */
+    #projects .nav-tabs .nav-link {
+      border: none;
+      color: #555;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+    #projects .nav-tabs .nav-link.active {
+      color: #0d6efd;
+      border-bottom: 2px solid #0d6efd;
+    }
+
+    /* Project Item */
+    .project-item {
+      position: relative;
+      border-radius: 10px;
+      overflow: hidden;
+      height: 320px;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      padding: 1.5rem;
+      text-align: center;
+      transition: transform 0.4s ease;
+    }
+
+    .project-item::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.55);
+      z-index: 1;
+    }
+
+    .project-item:hover {
+      transform: scale(1.03);
+    }
+
+    /* Overlay Content */
+    .overlay-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .overlay-content h5 {
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+
+    .overlay-content p {
+      font-size: 0.95rem;
+      margin: 8px 0 12px;
+    }
+
+    .overlay-content .btn {
+      border-radius: 4px;
+      transition: all 0.3s ease;
+    }
+
+    .overlay-content .btn:hover {
+      background: #fff;
+      color: #000;
+    }
+
+    /* Staggered Layout for middle boxes */
+    .middle-up {
+      transform: translateY(-20px);
+    }
+
+    /* Background Images */
+    .project-1 { background-image: url('https://images.unsplash.com/photo-1581091215367-59ab6e7f75e6?auto=format&fit=crop&w=700&q=80'); }
+    .project-2 { background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=700&q=80'); }
+    .project-3 { background-image: url('https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=700&q=80'); }
+    .project-4 { background-image: url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=700&q=80'); }
+    .project-5 { background-image: url('https://images.unsplash.com/photo-1474631245212-32dc3c8310c6?auto=format&fit=crop&w=700&q=80'); }
+    .project-6 { background-image: url('https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=700&q=80'); }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .middle-up { transform: translateY(0); }
+      .project-item { height: 280px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ======== OUR PROJECTS SECTION START ======== -->
+<section id="projects" class="py-5 bg-light">
+  <div class="container text-center">
+    <!-- Section Heading -->
+    <h2 class="fw-bold mb-3">Our Projects</h2>
+    <p class="text-muted mb-5 mx-auto" style="max-width: 700px;">
+      Explore our finest creations — each project reflects innovation, strategy, and design excellence that drive brands forward.
+    </p>
+
+    <!-- Tabs Navigation -->
+    <ul class="nav nav-tabs justify-content-center mb-5" id="projectTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all" type="button" role="tab">All</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="app-tab" data-bs-toggle="tab" data-bs-target="#app" type="button" role="tab">App</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="branding-tab" data-bs-toggle="tab" data-bs-target="#branding" type="button" role="tab">Product Branding</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="books-tab" data-bs-toggle="tab" data-bs-target="#books" type="button" role="tab">Books</button>
+      </li>
+    </ul>
+
+    <!-- Tabs Content -->
+    <div class="tab-content" id="projectTabsContent">
+
+      <!-- All Projects Tab -->
+      <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
+        <div class="row g-4">
+          <div class="col-md-4 project-box">
+            <div class="project-item project-1">
+              <div class="overlay-content">
+                <h5>Creative App Design</h5>
+                <p>Modern UI/UX with seamless user experience.</p>
+                <a href="#" class="btn btn-outline-light btn-sm">View Project</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 project-box middle-up">
+            <div class="project-item project-2">
+              <div class="overlay-content">
+                <h5>Product Branding</h5>
+                <p>Unique identity designs that connect with audiences.</p>
+                <a href="#" class="btn btn-outline-light btn-sm">View Project</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 project-box">
+            <div class="project-item project-3">
+              <div class="overlay-content">
+                <h5>Marketing Campaign</h5>
+                <p>Boosting brand awareness through storytelling.</p>
+                <a href="#" class="btn btn-outline-light btn-sm">View Project</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 project-box">
+            <div class="project-item project-4">
+              <div class="overlay-content">
+                <h5>Digital Strategy</h5>
+                <p>Crafting strong digital ecosystems for businesses.</p>
+                <a href="#" class="btn btn-outline-light btn-sm">View Project</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 project-box middle-up">
+            <div class="project-item project-5">
+              <div class="overlay-content">
+                <h5>Book Cover Design</h5>
+                <p>Creative cover art that captures attention instantly.</p>
+                <a href="#" class="btn btn-outline-light btn-sm">View Project</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 project-box">
+            <div class="project-item project-6">
+              <div class="overlay-content">
+                <h5>Corporate Website</h5>
+                <p>Elegant web presence for global business leaders.</p>
+                <a href="#" class="btn btn-outline-light btn-sm">View Project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- App Tab -->
+      <div class="tab-pane fade" id="app" role="tabpanel" aria-labelledby="app-tab">
+        <div class="row g-4">
+          <div class="col-md-4 project-box">
+            <div class="project-item project-1">
+              <div class="overlay-content">
+                <h5>Creative App Design</h5>
+                <p>Modern UI/UX with seamless user experience.</p>
+                <a href="#" class="btn btn-outline-light btn-sm">View Project</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 project-box">
+            <div class="project-item project-3">
+              <div class="overlay-content">
+                <h5>Marketing Campaign</h5>
+                <p>Boosting brand awareness through storytelling.</p>
+                <a href="#" class="btn btn-outline-light btn-sm">View Project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Branding Tab -->
+      <div class="tab-pane fade" id="branding" role="tabpanel" aria-labelledby="branding-tab">
+        <div class="row g-4">
+          <div class="col-md-4 project-box middle-up">
+            <div class="project-item project-2">
+              <div class="overlay-content">
+                <h5>Product Branding</h5>
+                <p>Unique identity designs that connect with audiences.</p>
+                <a href="#" class="btn btn-outline-light btn-sm">View Project</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 project-box">
+            <div class="project-item project-4">
+              <div class="overlay-content">
+                <h5>Digital Strategy</h5>
+                <p>Crafting strong digital ecosystems for businesses.</p>
+                <a href="#" class="btn btn-outline-light btn-sm">View Project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Books Tab -->
+      <div class="tab-pane fade" id="books" role="tabpanel" aria-labelledby="books-tab">
+        <div class="row g-4">
+          <div class="col-md-4 project-box middle-up">
+            <div class="project-item project-5">
+              <div class="overlay-content">
+                <h5>Book Cover Design</h5>
+                <p>Creative cover art that captures attention instantly.</p>
+                <a href="#" class="btn btn-outline-light btn-sm">View Project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- ======== OUR PROJECTS SECTION END ======== -->
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
