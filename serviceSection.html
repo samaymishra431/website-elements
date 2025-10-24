@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services Section</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Custom Styles -->
+  <style>
+    /* Base Styles */
+    #services .service-box {
+      height: 320px;
+      border-radius: 15px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      overflow: hidden;
+      transition: all 0.4s ease;
+    }
+
+    /* Overlay */
+    #services .service-box .overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.55);
+      transition: background 0.3s ease;
+    }
+
+    /* Content */
+    #services .service-box .content {
+      position: relative;
+      z-index: 2;
+    }
+
+    #services .service-box .icon i {
+      font-size: 2.5rem;
+    }
+
+    /* Hover Effect */
+    #services .service-box:hover {
+      transform: translateY(-8px);
+    }
+    #services .service-box:hover .overlay {
+      background: rgba(0, 0, 0, 0.7);
+    }
+
+    /* Background Images */
+    #services .col-lg-4:nth-child(1) .service-box { background-image: url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80'); }
+    #services .col-lg-4:nth-child(2) .service-box { background-image: url('https://images.unsplash.com/photo-1581091012184-5c3dca9c67b4?auto=format&fit=crop&w=800&q=80'); }
+    #services .col-lg-4:nth-child(3) .service-box { background-image: url('https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&q=80'); }
+    #services .col-lg-4:nth-child(4) .service-box { background-image: url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=800&q=80'); }
+    #services .col-lg-4:nth-child(5) .service-box { background-image: url('https://images.unsplash.com/photo-1487014679447-9f8336841d58?auto=format&fit=crop&w=800&q=80'); }
+    #services .col-lg-4:nth-child(6) .service-box { background-image: url('https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?auto=format&fit=crop&w=800&q=80'); }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      #services .service-box {
+        height: 280px;
+        padding: 2rem 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ======== SERVICES SECTION START ======== -->
+  <section class="py-5" id="services">
+    <div class="container text-center">
+      
+      <!-- Section Heading -->
+      <h2 class="fw-bold mb-3">Our Services</h2>
+      <p class="text-muted mb-5 mx-auto" style="max-width: 700px;">
+        We offer a complete range of professional services crafted to meet your business goals and operational needs. Every solution we deliver blends innovation, dedication, and practical efficiency.
+      </p>
+
+      <!-- Services Grid -->
+      <div class="row g-4">
+
+        <!-- Service 1 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-box position-relative text-white text-center p-5">
+            <div class="overlay"></div>
+            <div class="content position-relative">
+              <div class="icon mb-3"><i class="bi bi-gear-fill"></i></div>
+              <h5 class="fw-bold mb-3">Section 1</h5>
+              <p class="mb-4">We provide top-notch project management ensuring every phase runs efficiently and smoothly.</p>
+              <a href="#" class="btn btn-outline-light btn-sm">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-box position-relative text-white text-center p-5">
+            <div class="overlay"></div>
+            <div class="content position-relative">
+              <div class="icon mb-3"><i class="bi bi-laptop"></i></div>
+              <h5 class="fw-bold mb-3">Section 2</h5>
+              <p class="mb-4">We create cutting-edge digital systems that simplify operations and maximize productivity.</p>
+              <a href="#" class="btn btn-outline-light btn-sm">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-box position-relative text-white text-center p-5">
+            <div class="overlay"></div>
+            <div class="content position-relative">
+              <div class="icon mb-3"><i class="bi bi-building"></i></div>
+              <h5 class="fw-bold mb-3">Section 3</h5>
+              <p class="mb-4">We deliver construction solutions that merge precision, safety, and advanced technology.</p>
+              <a href="#" class="btn btn-outline-light btn-sm">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-box position-relative text-white text-center p-5">
+            <div class="overlay"></div>
+            <div class="content position-relative">
+              <div class="icon mb-3"><i class="bi bi-people"></i></div>
+              <h5 class="fw-bold mb-3">Section 4</h5>
+              <p class="mb-4">We focus on client relationships built on collaboration, transparency, and trust.</p>
+              <a href="#" class="btn btn-outline-light btn-sm">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-box position-relative text-white text-center p-5">
+            <div class="overlay"></div>
+            <div class="content position-relative">
+              <div class="icon mb-3"><i class="bi bi-lightbulb"></i></div>
+              <h5 class="fw-bold mb-3">Section 5</h5>
+              <p class="mb-4">We blend creativity and strategic planning to build sustainable growth opportunities.</p>
+              <a href="#" class="btn btn-outline-light btn-sm">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-box position-relative text-white text-center p-5">
+            <div class="overlay"></div>
+            <div class="content position-relative">
+              <div class="icon mb-3"><i class="bi bi-globe"></i></div>
+              <h5 class="fw-bold mb-3">Section 6</h5>
+              <p class="mb-4">Our global presence helps businesses expand and thrive in a competitive marketplace.</p>
+              <a href="#" class="btn btn-outline-light btn-sm">Read More</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- ======== SERVICES SECTION END ======== -->
+
+  <!-- Bootstrap JS (Optional) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
