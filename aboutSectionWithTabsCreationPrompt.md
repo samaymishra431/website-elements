@@ -1,0 +1,1 @@
+now create an another section that is about section on the left side little heading about us after that make 3 tabs our company, our mission, and our vision in tabs have 1 heading 1 paragraph, and 1 button Learn More and right side has image
